@@ -46,6 +46,7 @@ class Song
     song_name = artist_song[1].split(".mp3").first
     song = self.create_by_name(song_name)
     song.artist_name = artist_song[0].strip
+    song
   end
 
   def save
