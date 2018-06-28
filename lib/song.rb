@@ -54,6 +54,10 @@ class Song
     self.all.last
   end
 
+  def self.destroy_all
+    self.all.clear
+  end
+
   def save
     self.class.all << self
   end
